@@ -809,6 +809,6 @@ async function claudePingEdit(promptMsg, threadTs) {
     console_log(`Added Claude ping on thread ${threadTs}`);
 }
 
-async function createClaudePing(ts) {
-    return await postSlackMessage(null, ts, true);
+async function createClaudePing(promptMsg, ts) {
+    return await postSlackMessage(promptMsg, ts, true);
 }
